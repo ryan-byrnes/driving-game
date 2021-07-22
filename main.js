@@ -28,9 +28,6 @@ function startCar() {
   if (event.keyCode === 32) {
     setInterval(function () {
       position += 10;
-      car.style.position = 'absolute';
-      car.style.height = '50px';
-      car.style.width = '10%';
       car.style.left = position + 'px';
     }, 16);
 
