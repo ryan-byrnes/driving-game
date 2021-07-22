@@ -1,0 +1,17 @@
+* {
+  background-color: green;
+}
+
+body {
+  margin: 0 auto;
+}
+
+img {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.car-container {
+  height: 50px;
+  width: 25%;
+}
