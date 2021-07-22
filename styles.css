@@ -7,11 +7,27 @@ body {
 }
 
 img {
-  padding-top: 20px;
+  padding: 40px;
   width: 100%;
 }
 
 .car-container {
   height: 50px;
-  width: 25%;
+  width: 10%;
+}
+
+.car-down {
+  transform: rotate(90deg);
+}
+
+.car-left {
+  transform: rotate(180deg);
+}
+
+.car-up {
+  transform: rotate(270deg);
+}
+
+.car-right {
+  transform: rotate(0);
 }
