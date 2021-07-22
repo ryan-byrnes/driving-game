@@ -21,3 +21,20 @@ function turnCar() {
       break;
   }
 }
+
+function startCar() {
+  var position = 0;
+  var car = document.querySelector('img');
+  if (event.keyCode === 32) {
+    setInterval(function () {
+      position += 10;
+      car.style.position = 'absolute';
+      car.style.height = '50px';
+      car.style.width = '10%';
+      car.style.left = position + 'px';
+    }, 16);
+
+  }
+}
+
+window.addEventListener('keydown', startCar);
