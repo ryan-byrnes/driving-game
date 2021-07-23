@@ -1,6 +1,8 @@
 var data = {
   facing: 'east',
-  started: false
+  started: false,
+  positionX: 0,
+  positionY: 0
 };
 
 var intervalId;
@@ -37,12 +39,10 @@ function turnCar() {
 function startAndStopCar() {
 
   if (event.keyCode === 32 && data.started === false) {
-    // debugger;
     intervalId = setInterval(function () {
-      var position = 0;
       var car = document.querySelector('img');
-      position += 10;
-      car.style.left = position + 'px';
+      data.positionX += 10;
+      car.style.left = data.positionX + 'px';
     }, 16);
     data.started = true;
 
